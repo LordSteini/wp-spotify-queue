@@ -6,7 +6,8 @@ Setup:
 3. Set the Redirect URL to "http://localhost:8888/wordpress/wp-admin/admin.php?page=spotify-queue&spotify-auth=1" (you may have to set the 'localhost:8888' to your ip)
 4. Set a checkmark for the web-api
 
-5. Install the Plugin to your Wordpress site and activate it
+5. Choose the english or german Version of the Plugin IMPORTANT: ONLY ADD GERMAN OR ENGLISH
+6. Install the Plugin to your Wordpress site and activate it
 7. Navigate to the menu item "Spotify Queue"
 8. Insert your Client ID and your Client Secret
 9. Set the Cooldown for adding the same Song again
