@@ -34,7 +34,7 @@ function spotify_queue_settings_page() {
             submit_button();
             ?>
         </form>
-        <a href="<?php echo spotify_queue_get_auth_url(); ?>">Mit Spotify verbinden</a>
+        <a href="<?php echo spotify_queue_get_auth_url(); ?>">Connect to Spotify</a>
     </div>
     <?php
 }
@@ -240,7 +240,7 @@ function spotify_queue_search_form() {
     ob_start();
     ?>
     <div id="spotify-queue-search">
-        <input type="text" id="spotify-search-input" placeholder="Suche nach einem Song oder Interpreten...">
+        <input type="text" id="spotify-search-input" placeholder="Search for a song or artist...">
         <button id="spotify-search-button">Search</button>
     </div>
     <div id="spotify-search-results"></div>
@@ -254,8 +254,8 @@ function spotify_queue_shortcode() {
     ob_start();
     ?>
     <div class="spotify-container">
-        <input type="text" id="spotify-search-input" placeholder="Suche nach einem Song oder Interpreten...">
-        <button id="spotify-search-button">Suchen</button>
+        <input type="text" id="spotify-search-input" placeholder="Search for a song or artist...">
+        <button id="spotify-search-button">Search</button>
         <div id="spotify-search-results"></div>
     </div>
     <?php
