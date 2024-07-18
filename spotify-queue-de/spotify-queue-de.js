@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
                 } else {
                     var errorData = response.data;
                     var errorMessage = $('<div>').addClass('spotify-error-message').html(
-                                                                                         'Der Song "' + errorData.song_name + '" von ' + errorData.song_artist + ' konnte nicht in die Warteschlange hinzugefügt werden. Der selbe Song kann nicht innerhalb von ' + errorData.cooldown_minutes + ' Minuten hinzugefügt werden. Bitte warte ' + errorData.remaining_time + ' Minuten oder wende dich an das Technikteam.'
+                                                                                         'Der Song "' + errorData.song_name + '" von ' + errorData.song_artist + ' konnte nicht in die Warteschlange hinzugefügt werden. Der selbe Song kann nicht innerhalb von ' + errorData.cooldown_minutes + ' Minuten hinzugefügt werden. Bitte warte ' + errorData.remaining_time + ' Minuten oder wende dich an die Verantwortlichen.'
                     );
                     $('body').append(errorMessage);
                     setTimeout(function() {
