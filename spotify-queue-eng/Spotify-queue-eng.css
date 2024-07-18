@@ -1,1 +1,91 @@
+#spotify-queue-search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#spotify-search-input {
+    width: 80%;
+    padding: 10px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+#spotify-search-button {
+    padding: 10px 20px;
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#spotify-search-results {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spotify-song {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.spotify-cover {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.spotify-info {
+    flex: 1;
+}
+
+.spotify-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.spotify-artist {
+    font-size: 14px;
+    color: #555;
+}
+
+.spotify-add-button {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.spotify-success-message, .spotify-error-message {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border-radius: 5px;
+    white-space: pre-line; /* Ermöglicht Zeilenumbrüche */
+}
+
+.spotify-success-message {
+    background-color: green;
+}
+
 
