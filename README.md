@@ -17,3 +17,7 @@ Setup:
 13. Start your Spotify
 
     Everything should be working
+
+PS:
+If you add additional translations feel free to send them to me. Maybe I´m gonna implement a "choose language" option.
+If you have any suggestions feel free to tell me.
