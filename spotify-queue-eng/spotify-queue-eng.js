@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
             },
             success: function(response) {
                 if (response.success) {
-                    var message = 'Song "' + songName + '" von ' + songArtist + ' wurde zur Wiedergabeliste hinzugefügt. Bitte beachte, dass es etwas dauern kann bis dein Song gespielt wird.';
+                    var message = 'The Song "' + songName + '" from ' + songArtist + ' was added to the queue. Please note that it may take some time for your song to play.';
                     var successMessage = $('<div>').addClass('spotify-success-message').text(message);
                     $('body').append(successMessage);
                     setTimeout(function() {
@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
                 } else {
                     var errorData = response.data;
                     var errorMessage = $('<div>').addClass('spotify-error-message').html(
-                                                                                         'Der Song "' + errorData.song_name + '" von ' + errorData.song_artist + ' konnte nicht in die Warteschlange hinzugefügt werden. Der selbe Song kann nicht innerhalb von ' + errorData.cooldown_minutes + ' Minuten hinzugefügt werden. Bitte warte ' + errorData.remaining_time + ' Minuten oder wende dich an das Technikteam.'
+                                                                                         'The song "' + errorData.song_name + '" from ' + errorData.song_artist + ' could not be added to the queue. The same song can not be added within ' + errorData.cooldown_minutes + ' minutes. Please wait ' + errorData.remaining_time + ' minutes.'
                     );
                     $('body').append(errorMessage);
                     setTimeout(function() {
